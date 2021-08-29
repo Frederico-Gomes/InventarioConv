@@ -28,7 +28,7 @@ namespace InventarioConv.UseCase.Produto
                 Tipo = request.Tipo
 
             };
-            return produtoRepository.criaProduto(produto);
+            return produtoRepository.CriaProduto(produto);
         }
     }
 }

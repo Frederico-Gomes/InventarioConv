@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.Repository",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.UseCase", "InventarioConv.UseCase\InventarioConv.UseCase.csproj", "{82E88733-18F1-4B28-A548-9A8396951224}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.DatabaseScript", "InventarioConv.DatabaseScript\InventarioConv.DatabaseScript.csproj", "{0F7B2E5F-EFB5-4322-B00F-00DFFAE7DF92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioConv.Test", "InventarioConv.Test\InventarioConv.Test.csproj", "{909ABD0E-476E-4C4D-AB21-D48304E9C7BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{82E88733-18F1-4B28-A548-9A8396951224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82E88733-18F1-4B28-A548-9A8396951224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82E88733-18F1-4B28-A548-9A8396951224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7B2E5F-EFB5-4322-B00F-00DFFAE7DF92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7B2E5F-EFB5-4322-B00F-00DFFAE7DF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7B2E5F-EFB5-4322-B00F-00DFFAE7DF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7B2E5F-EFB5-4322-B00F-00DFFAE7DF92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909ABD0E-476E-4C4D-AB21-D48304E9C7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909ABD0E-476E-4C4D-AB21-D48304E9C7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909ABD0E-476E-4C4D-AB21-D48304E9C7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909ABD0E-476E-4C4D-AB21-D48304E9C7BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

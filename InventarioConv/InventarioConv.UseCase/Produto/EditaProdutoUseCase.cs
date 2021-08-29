@@ -18,7 +18,7 @@ namespace InventarioConv.UseCase.Produto
         }
         public Borders.Entities.Produto Execute(EditaProdutoRequest request)
         {
-            return produtoRepository.editaProduto(request);
+            return produtoRepository.EditaProduto(request);
         }
     }
 }

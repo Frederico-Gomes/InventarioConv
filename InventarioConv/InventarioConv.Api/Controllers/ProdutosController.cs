@@ -34,10 +34,10 @@ namespace InventarioConv.Api.Controllers
         ///<response code = "200" > Lista todos os produtos cadastrados </response>
         ///<response code = "404" > Nenhum produto cadastrado até o momento</response>
         [HttpGet]
-        [Route("/listaTodos")]
-        public IActionResult listarProdutos()
+        [Route("listaTodos")]
+        public IActionResult ListarProdutos()
         {
-            var produtos = listaProdutosUseCase.buscaTodos();
+            var produtos = listaProdutosUseCase.BuscaTodos();
             if (produtos.Count() == 0) return NotFound("Nenhum produto cadastrado");
             return Ok(produtos);
         }
@@ -48,7 +48,7 @@ namespace InventarioConv.Api.Controllers
         ///<response code = "200" > Retorna o produto solicitado </response>
         ///<response code = "404" > Não existem nenhum produto cadastrado com o id oferecido</response>
         [HttpGet]
-        public IActionResult procuraProduto([FromQuery] ProcuraProdutoRequest request)
+        public IActionResult ProcuraProduto([FromQuery] ProcuraProdutoRequest request)
         {
             var produto = listaProdutosUseCase.Execute(request);
             if (produto == null) return NotFound("Produto Não cadastrado");
@@ -61,7 +61,7 @@ namespace InventarioConv.Api.Controllers
         /// <param name="request">Produto a ser inserido no banco de dados </param>
         ///<response code = "201" > Retorna o o produto cadastrado </response>
         [HttpPost]
-        public IActionResult criaProduto([FromQuery] CriaProdutoRequest request)
+        public IActionResult CriaProduto([FromQuery] CriaProdutoRequest request)
         {
             var produto = criaProdutoUseCase.Execute(request);
             return Created("Produto criado com sucesso", produto);
@@ -75,7 +75,7 @@ namespace InventarioConv.Api.Controllers
         ///<response code = "404" > Não existe nenhum produto cadastrado no banco de dados com o Id informado </response>
 
         [HttpPut]
-        public IActionResult editaProduto([FromQuery] EditaProdutoRequest request)
+        public IActionResult EditaProduto([FromQuery] EditaProdutoRequest request)
         {
             var produto = editaProdutoUseCase.Execute(request);
             if (produto == null) return NotFound("Produto Não cadastrado");
@@ -89,7 +89,7 @@ namespace InventarioConv.Api.Controllers
         ///<response code = "200" > Retorna o produto </response>
         ///<response code = "404" > Não existe nenhum produto cadastrado no banco de dados com o Id informado </response>
         [HttpDelete]
-        public IActionResult removeProduto([FromQuery] RemoveProdutoRequest request)
+        public IActionResult RemoveProduto([FromQuery] RemoveProdutoRequest request)
         {
             var produto = removeProdutoUseCase.Execute(request);
             if (produto == null) return NotFound("Produto Não cadastrado");

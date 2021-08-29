@@ -19,12 +19,12 @@ namespace InventarioConv.UseCase.Produto
 
         public Borders.Entities.Produto Execute(ProcuraProdutoRequest request)
         {
-            return produtoRepository.procuraProduto(request);
+            return produtoRepository.ProcuraProduto(request);
         }
 
-        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.buscaTodos()
+        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.BuscaTodos()
         {
-            return produtoRepository.listaTodos();
+            return produtoRepository.ListaTodos();
         }
     }
 }

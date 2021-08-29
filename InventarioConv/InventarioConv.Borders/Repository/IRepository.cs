@@ -8,6 +8,6 @@ namespace InventarioConv.Borders.Repository
 {
     public interface IRepository <TEntity>
     {
-        IEnumerable<TEntity> listaTodos();
+        IEnumerable<TEntity> ListaTodos();
     }
 }

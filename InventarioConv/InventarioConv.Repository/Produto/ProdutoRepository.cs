@@ -16,7 +16,7 @@ namespace InventarioConv.Repository.Produto
             this.dbContext = dbContext as Context;
         }
 
-        public Borders.Entities.Produto criaProduto(Borders.Entities.Produto produto)
+        public Borders.Entities.Produto CriaProduto(Borders.Entities.Produto produto)
         {
             dbContext.Produto.Add(produto);
             dbContext.SaveChanges();
@@ -24,7 +24,7 @@ namespace InventarioConv.Repository.Produto
             return produto;
         }
 
-        public Borders.Entities.Produto editaProduto(EditaProdutoRequest request)
+        public Borders.Entities.Produto EditaProduto(EditaProdutoRequest request)
         {
             var produto = dbContext.Produto.Find(request.ID);
             if (produto == null)   return produto;
@@ -38,17 +38,17 @@ namespace InventarioConv.Repository.Produto
 
         }
 
-        public IEnumerable<Borders.Entities.Produto> listaTodos()
+        public IEnumerable<Borders.Entities.Produto> ListaTodos()
         {
             return dbContext.Produto.ToList();
         }
 
-        public Borders.Entities.Produto procuraProduto(ProcuraProdutoRequest request)
+        public Borders.Entities.Produto ProcuraProduto(ProcuraProdutoRequest request)
         {
             return dbContext.Produto.Find(request.Id);
         }
 
-        public Borders.Entities.Produto removeProduto(RemoveProdutoRequest request)
+        public Borders.Entities.Produto RemoveProduto(RemoveProdutoRequest request)
         {
             var produto = dbContext.Produto.Find(request.Id);
             if (produto == null) return produto;

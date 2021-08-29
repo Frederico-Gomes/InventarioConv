@@ -9,6 +9,6 @@ namespace InventarioConv.Borders.UseCase.Produto
 {
     public interface IListaProdutosUseCase : IUseCase<ProcuraProdutoRequest, Borders.Entities.Produto>
     {
-       IEnumerable<Borders.Entities.Produto> buscaTodos();
+       IEnumerable<Borders.Entities.Produto> BuscaTodos();
     }
 }

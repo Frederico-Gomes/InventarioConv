@@ -4,14 +4,14 @@
         <name>InventarioConv.Api</name>
     </assembly>
     <members>
-        <member name="M:InventarioConv.Api.Controllers.ProdutosController.listarProdutos">
+        <member name="M:InventarioConv.Api.Controllers.ProdutosController.ListarProdutos">
              <summary>
              Procura todos os produtos cadastrados no banco de dados
              </summary>
             <response code = "200" > Lista todos os produtos cadastrados </response>
             <response code = "404" > Nenhum produto cadastrado até o momento</response>
         </member>
-        <member name="M:InventarioConv.Api.Controllers.ProdutosController.procuraProduto(InventarioConv.Borders.DTO.Produto.ProcuraProdutoRequest)">
+        <member name="M:InventarioConv.Api.Controllers.ProdutosController.ProcuraProduto(InventarioConv.Borders.DTO.Produto.ProcuraProdutoRequest)">
              <summary>
              Procura um produto específico utilizando seu ID
              </summary>
@@ -19,14 +19,14 @@
             <response code = "200" > Retorna o produto solicitado </response>
             <response code = "404" > Não existem nenhum produto cadastrado com o id oferecido</response>
         </member>
-        <member name="M:InventarioConv.Api.Controllers.ProdutosController.criaProduto(InventarioConv.Borders.DTO.Produto.CriaProdutoRequest)">
+        <member name="M:InventarioConv.Api.Controllers.ProdutosController.CriaProduto(InventarioConv.Borders.DTO.Produto.CriaProdutoRequest)">
              <summary>
              Insere um novo produto no banco de dados
              </summary>
              <param name="request">Produto a ser inserido no banco de dados </param>
             <response code = "201" > Retorna o o produto cadastrado </response>
         </member>
-        <member name="M:InventarioConv.Api.Controllers.ProdutosController.editaProduto(InventarioConv.Borders.DTO.Produto.EditaProdutoRequest)">
+        <member name="M:InventarioConv.Api.Controllers.ProdutosController.EditaProduto(InventarioConv.Borders.DTO.Produto.EditaProdutoRequest)">
              <summary>
              Atualiza os dados de um produto ja inserido no banco de dados
              </summary>
@@ -34,7 +34,7 @@
             <response code = "200" > Retorna o produto já com os dados atualizados </response>
             <response code = "404" > Não existe nenhum produto cadastrado no banco de dados com o Id informado </response>
         </member>
-        <member name="M:InventarioConv.Api.Controllers.ProdutosController.removeProduto(InventarioConv.Borders.DTO.Produto.RemoveProdutoRequest)">
+        <member name="M:InventarioConv.Api.Controllers.ProdutosController.RemoveProduto(InventarioConv.Borders.DTO.Produto.RemoveProdutoRequest)">
              <summary>
              Remove um produto do banco de dados
              </summary>
