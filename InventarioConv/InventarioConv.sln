@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioConv.Api", "InventarioConv.Api\InventarioConv.Api.csproj", "{785F4924-A9EB-43FC-8D4A-61A8E91530FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.Api", "InventarioConv.Api\InventarioConv.Api.csproj", "{785F4924-A9EB-43FC-8D4A-61A8E91530FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioConv.Borders", "InventarioConv.Borders\InventarioConv.Borders.csproj", "{BA41ED5F-EEA4-4882-BB8D-20474B1174A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.Borders", "InventarioConv.Borders\InventarioConv.Borders.csproj", "{BA41ED5F-EEA4-4882-BB8D-20474B1174A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioConv.Repository", "InventarioConv.Repository\InventarioConv.Repository.csproj", "{FF167E4B-8FAC-4626-BE09-04F6B79E24E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.Repository", "InventarioConv.Repository\InventarioConv.Repository.csproj", "{FF167E4B-8FAC-4626-BE09-04F6B79E24E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventarioConv.UseCase", "InventarioConv.UseCase\InventarioConv.UseCase.csproj", "{82E88733-18F1-4B28-A548-9A8396951224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventarioConv.UseCase", "InventarioConv.UseCase\InventarioConv.UseCase.csproj", "{82E88733-18F1-4B28-A548-9A8396951224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

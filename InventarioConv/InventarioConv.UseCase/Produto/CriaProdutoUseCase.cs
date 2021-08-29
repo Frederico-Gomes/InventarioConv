@@ -9,17 +9,26 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.UseCase.Produto
 {
-    class CriaProdutoUseCase : ICriaProdutoUseCase
+    public class CriaProdutoUseCase : ICriaProdutoUseCase
     {
         private readonly IProdutoRepository produtoRepository;
-        public CriaProdutoUseCase(IProdutoRepository repository)
+        public CriaProdutoUseCase(IProdutoRepository produtoRepository)
         {
-            this.produtoRepository = repository;
+            this.produtoRepository = produtoRepository;
         }
 
         public Borders.Entities.Produto Execute(CriaProdutoRequest request)
         {
-            return produtoRepository.criaProduto(request);
+            Borders.Entities.Produto produto = new Borders.Entities.Produto
+            {
+                ID = Guid.NewGuid(),
+                Nome = request.Nome,
+                Descricao = request.Descricao,
+                Quantidade = request.Quantidade,
+                Tipo = request.Tipo
+
+            };
+            return produtoRepository.criaProduto(produto);
         }
     }
 }

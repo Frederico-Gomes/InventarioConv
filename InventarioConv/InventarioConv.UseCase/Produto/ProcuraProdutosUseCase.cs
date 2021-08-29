@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.UseCase.Produto
 {
-    class ProcuraProdutosUseCase : IProcuraProdutosUseCase
+    public class ProcuraProdutosUseCase : IProcuraProdutosUseCase
     {
         private readonly IProdutoRepository produtoRepository;
         public ProcuraProdutosUseCase(IProdutoRepository repository)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.UseCase.Produto
 {
-    class ListaProdutosUseCase : IListaProdutosUseCase
+    public class ListaProdutosUseCase : IListaProdutosUseCase
     {
         private readonly IProdutoRepository produtoRepository;
         public ListaProdutosUseCase(IProdutoRepository repository)
@@ -22,7 +22,7 @@ namespace InventarioConv.UseCase.Produto
             throw new NotImplementedException();
         }
 
-        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.Execute(ListaProdutosRequest request)
+        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.Execute()
         {
             return produtoRepository.listaTodos();
         }

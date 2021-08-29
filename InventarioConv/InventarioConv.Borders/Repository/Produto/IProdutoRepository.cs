@@ -9,10 +9,9 @@ namespace InventarioConv.Borders.Repository.Produto
 {
     public interface IProdutoRepository : IRepository<Entities.Produto>
     {
-        Entities.Produto criaProduto(CriaProdutoRequest request);
+        Entities.Produto criaProduto(Entities.Produto produto);
         Entities.Produto editaProduto(EditaProdutoRequest request);
         Entities.Produto removeProduto(RemoveProdutoRequest request);
         Entities.Produto procuraProduto(ProcuraProdutoRequest request);
     }
 }
-// colocar o procura produto

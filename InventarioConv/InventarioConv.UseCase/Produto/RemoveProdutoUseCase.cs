@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.UseCase.Produto
 {
-    class RemoveProdutoUseCase : IRemoveProdutoUseCase
+    public class RemoveProdutoUseCase : IRemoveProdutoUseCase
     {
         private readonly IProdutoRepository produtoRepository;
         public RemoveProdutoUseCase(IProdutoRepository repository)
