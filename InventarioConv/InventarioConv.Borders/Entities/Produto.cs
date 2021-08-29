@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.Entities
 {
-    class Produto
+    public class Produto
     {
         public Guid ID { get; set; }
         public string Nome { get; set; }

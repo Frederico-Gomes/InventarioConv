@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.DTO.Produto
 {
-    class RemoveProdutoRequest
+    public class RemoveProdutoRequest
     {
         [Required]
         public Guid Id{ get; set; }

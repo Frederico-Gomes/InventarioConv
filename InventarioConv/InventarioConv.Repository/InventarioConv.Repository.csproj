@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\InventarioConv.Borders\InventarioConv.Borders.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Produto\" />
+  </ItemGroup>
+
 </Project>

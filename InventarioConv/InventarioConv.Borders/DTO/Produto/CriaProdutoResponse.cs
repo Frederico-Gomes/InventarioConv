@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.DTO.Produto
 {
-    class CriaProdutoResponse
+    public class CriaProdutoResponse
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }

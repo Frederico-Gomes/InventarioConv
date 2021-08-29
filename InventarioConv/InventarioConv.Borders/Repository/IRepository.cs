@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.Repository
 {
-    interface IRepository <TEntity>
+    public interface IRepository <TEntity>
     {
         IEnumerable<TEntity> listaTodos();
     }

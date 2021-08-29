@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.DTO.Produto
 {
-    class CriaProdutoRequest
+    public class CriaProdutoRequest
     {
         [Required]
         public string Nome { get; set; }
         public string Descricao { get; set; }
         [Required]
-        [Range(1, uint.MaxValue]
+        [Range(1, uint.MaxValue)]
         public uint Quantidade { get; set; }
         public TipoEnum Tipo{ get; set; }
     }

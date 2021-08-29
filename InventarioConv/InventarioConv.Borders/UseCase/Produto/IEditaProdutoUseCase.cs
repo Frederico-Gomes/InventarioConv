@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.UseCase.Produto
 {
-    interface IEditaProdutoUseCase : IUseCase<EditaProdutoRequest, Borders.Entities.Produto>
+    public interface IEditaProdutoUseCase : IUseCase<EditaProdutoRequest, Borders.Entities.Produto>
     {
     }
 }

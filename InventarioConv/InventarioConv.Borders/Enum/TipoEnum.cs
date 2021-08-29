@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.Enum
 {
-    enum TipoEnum : byte
+    public enum TipoEnum : byte
     {
         Alimenticios,
         Conveniencia

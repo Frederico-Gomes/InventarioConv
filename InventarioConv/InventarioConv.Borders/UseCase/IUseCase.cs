@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.UseCase
 {
-    interface IUseCase <TRequest, TEntity>
+    public interface IUseCase <TRequest, TEntity>
     {
         TEntity Execute(TRequest request);
     }
 }
+ 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.DTO.Produto
 {
-    class ListaProdutosResponse
+    public class ListaProdutosResponse
     {
        
     }

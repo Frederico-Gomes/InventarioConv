@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.DTO.Produto
 {
-    class RemoveProdutoResponse
+    public class RemoveProdutoResponse
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }
