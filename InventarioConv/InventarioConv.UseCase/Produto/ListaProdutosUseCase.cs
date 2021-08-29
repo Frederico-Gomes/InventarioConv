@@ -17,12 +17,12 @@ namespace InventarioConv.UseCase.Produto
             this.produtoRepository = repository;
         }
 
-        public Borders.Entities.Produto Execute(ListaProdutosRequest request)
+        public Borders.Entities.Produto Execute(ProcuraProdutoRequest request)
         {
-            throw new NotImplementedException();
+            return produtoRepository.procuraProduto(request);
         }
 
-        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.Execute()
+        IEnumerable<Borders.Entities.Produto> IListaProdutosUseCase.buscaTodos()
         {
             return produtoRepository.listaTodos();
         }

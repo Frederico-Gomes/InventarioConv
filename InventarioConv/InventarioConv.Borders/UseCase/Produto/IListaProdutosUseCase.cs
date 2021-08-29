@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace InventarioConv.Borders.UseCase.Produto
 {
-    public interface IListaProdutosUseCase : IUseCase<ListaProdutosRequest, Borders.Entities.Produto>
+    public interface IListaProdutosUseCase : IUseCase<ProcuraProdutoRequest, Borders.Entities.Produto>
     {
-       IEnumerable<Borders.Entities.Produto> Execute();
+       IEnumerable<Borders.Entities.Produto> buscaTodos();
     }
 }

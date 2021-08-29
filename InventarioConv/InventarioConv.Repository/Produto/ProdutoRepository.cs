@@ -27,7 +27,8 @@ namespace InventarioConv.Repository.Produto
         public Borders.Entities.Produto editaProduto(EditaProdutoRequest request)
         {
             var produto = dbContext.Produto.Find(request.ID);
-            if (produto == null) produto;
+            if (produto == null)   return produto;
+
             produto.Nome = request.Nome;
             produto.Descricao = request.Descricao;
             produto.Quantidade = request.Quantidade;
@@ -50,6 +51,7 @@ namespace InventarioConv.Repository.Produto
         public Borders.Entities.Produto removeProduto(RemoveProdutoRequest request)
         {
             var produto = dbContext.Produto.Find(request.Id);
+            if (produto == null) return produto;
             dbContext.Produto.Remove(produto);
             dbContext.SaveChanges();
             return produto;
