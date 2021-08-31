@@ -46,9 +46,7 @@ namespace InventarioConv.Api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "InventarioConv.Api", Version = "v1" });
-                var basePath = AppDomain.CurrentDomain.BaseDirectory;
-                var filename = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
-                c.IncludeXmlComments(Path.Combine(basePath, filename));
+                c.IncludeXmlComments("InventarioConv.Api.xml");
             });
 
         }
